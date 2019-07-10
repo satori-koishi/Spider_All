@@ -1,0 +1,301 @@
+# -*- coding: utf-8 -*-
+import scrapy
+import redis
+from scrapy import Selector
+from scrapy.http import Request
+import re
+import json
+import time
+
+
+class JiangXiOtherProvince(scrapy.Spider):
+    name = 'JiangXiOtherProvince'
+
+    def __init__(self, name=None, **kwargs):
+        super().__init__(name=None, **kwargs)
+        self.url = 'http://59.52.254.106:8893/outQueryEnterpriseAll'
+        pool = redis.ConnectionPool(host='106.12.112.207', password='tongna888')
+        self.r = redis.Redis(connection_pool=pool)
+        self.flag = True
+        self.data = {'contactMan': '', 'companyArea': '', 'area': '江西省', 'contactPhone': ''}
+        self.bigurl = 'http://59.52.254.106:8093'
+        self.token = 'LnHRF8R1jmqOLFnnK048DcokeilQRDS2'
+        self.data['token'] = self.token
+        self.number = 5
+        self.page = None
+        self.bigurl = 'http://59.52.254.106:8893/'
+
+    def start_requests(self):
+        yield scrapy.Request(url=self.url, callback=self.page_transfer)
+
+    def page_transfer(self, response):
+        all_data = Selector(response=response).xpath('//span[@class="localPage"]')[1].xpath('text()').extract_first()
+        page = int(all_data) // 10 + 1
+        url = 'http://59.52.254.106:8893/outQueryEnterpriseAll?pageIndex=%s' % page
+        yield scrapy.Request(url=url, callback=self.parse,
+                             meta={'page': page}
+                             )
+
+    def parse(self, response):
+        company_info_url = Selector(response).xpath('//table [@class="so_table table_width"]/tr/td[2]/a/@onclick')
+        for one_c in company_info_url:
+            url = one_c.extract()
+            new_url = re.findall('winopen\(\'(.*)\',1100,600,\'详情\'\);', url)[0]
+            new_url = self.bigurl + new_url
+            print(new_url)
+            yield scrapy.Request(url=new_url, callback=self.company_information, dont_filter=True)
+        print(response.meta['page'], type(response.meta['page']))
+        page = int(response.meta['page'])
+        page -= 1
+        self.number -= 1
+        if page != 0:
+            url = 'http://59.52.254.106:8893/outQueryEnterpriseAll?pageIndex=%s' % page
+            yield scrapy.Request(url=url, callback=self.parse, dont_filter=True,
+                                 meta={'page': page}
+                                 )
+
+    def company_information(self, response):
+
+        company_name = Selector(response=response).xpath('//table[@class="table_width"]')[1].xpath(
+            './tr[1]/td[1]/text()').extract_first()
+        number = Selector(response=response).xpath('//table[@class="table_width"]')[1].xpath(
+            './tr[1]/td[2]/text()').extract_first()
+        address = Selector(response=response).xpath('//td[@colspan="3"]')[1].xpath('text()').extract_first()
+        contact_person = Selector(response=response).xpath('//td[@colspan="3"]')[2].xpath('text()').extract_first()
+        company_name = company_name.split()[0]
+        repeat = self.r.sadd('Company_name', company_name + '江西省')
+        if repeat:
+            self.data['companyName'] = company_name
+            if len(number) != 18 or number is None:
+                self.data['licenseNum'] = ''
+            else:
+                self.data['licenseNum'] = number
+
+            if address.split() is not None:
+                address = address.split()[0]
+                self.data['contactAddress'] = address
+            else:
+                self.data['contactAddress'] = ''
+
+            if contact_person.split() is not None:
+                contact_person = contact_person.split()[0]
+                if len(contact_person) < 4:
+                    self.data['contactMan'] = contact_person
+                else:
+                    contact_person = Selector(response=response).xpath('//td[@colspan="3"]')[3].xpath(
+                        'text()').extract_first()
+                    self.data['contactMan'] = contact_person
+            else:
+                self.data['contactMan'] = ''
+            print(self.data)
+            yield scrapy.Request(
+                url='https://api.maotouin.com/rest/companyInfo/addCompanyRecord.htm',
+                # url='http://192.168.199.188:8080/web/rest/companyInfo/addCompanyRecord.htm',
+                method="POST",
+                headers={'Content-Type': 'application/json'},
+                body=json.dumps(self.data),
+                callback=self.zz,
+                meta={'company_name': company_name, 'data': self.data},dont_filter=True
+
+            )
+            userid = Selector(response=response).xpath('//input[@id="userId"]/@value').extract_first()
+            enQualificationType = Selector(response=response).xpath(
+                '//input[@id="enQualificationType"]/@value').extract_first()
+            registerPersonFalg = 'http://59.52.254.106:8893/toQueryEmployeeListJsonOut?userId=%s&enQualificationType=%s' \
+                                 '&registerPersonFalg=1' % (
+                                     userid, enQualificationType)
+            nonRegisterType = 'http://59.52.254.106:8893/toQueryEmployeeListJsonOut?userId=%s&enQualificationType=%s' \
+                              '&technicalType=1' % (
+                                  userid, enQualificationType)
+            data = {'page': '1', 'rows': '1000'}
+            # yield scrapy.FormRequest(
+            #     url=registerPersonFalg,
+            #     # url=nonRegisterType,
+            #     formdata=data,
+            #     headers={'Content-Type': ' application/x-www-form-urlencoded; charset=UTF-8'},
+            #     callback=self.person_info,
+            #     meta={'company_name': company_name,
+            #           'number': number},
+            #     dont_filter=True
+            #
+            # )
+            # yield scrapy.FormRequest(
+            #     url=nonRegisterType,
+            #     formdata=data,
+            #     headers={'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'},
+            #     callback=self.not_person_info,
+            #     meta={'company_name': company_name,
+            #           'number': number},
+            #     dont_filter=True
+            # )
+        else:
+            print('此公司信息已经存在', company_name)
+
+    def zz(self, response):
+        not_company_code = json.loads(response.text)['code']
+        not_search_company_name = response.meta['company_name']
+        zz_data = response.meta['data']
+        self.r.sadd('all_company_name', not_search_company_name)
+        print(response.text)
+        data = json.dumps(zz_data, ensure_ascii=False)
+        print(response.meta['data'], 'aaaaaaaaaaaaaaaaaa')
+        if not_company_code == -102:
+            self.r.sadd('title_name1', not_search_company_name)
+            self.r.sadd('title_102', data)
+            self.r.sadd('title_name3', not_search_company_name)
+            print(not_search_company_name, '没找到的企业')
+        else:
+            print(not_search_company_name, '找到的企业')
+
+    def person_info(self, response):
+        now_person = json.loads(response.text)
+        for n in now_person['rows']:
+            person_info = {'companyName': response.meta['company_name'], 'licenseNum': response.meta['number'],
+                           'area': '江西省', 'sex': '', 'idCard': '', 'major': '', 'phone': '', 'tokenKey': self.token,
+                           'name': n['name']}
+            # 人员名称
+            # print(n['name'])
+            print('我是%s----公司是%s' % (n['name'], response.meta['company_name']))
+
+            # 证书编号
+            try:
+                person_info['num'] = n['registrationInfo'][0]['regCertificateNumber']
+            except KeyError as e:
+                person_info['num'] = ''
+
+            # 注册类别
+            person_info['grade'] = n['registrationInfo'][0]['registerType']['name']
+            # 注册专业
+            try:
+                person_info['major'] = n['registrationInfo'][0]['qualificationRegMajors'][0]['name']
+            except KeyError as e:
+                person_info['major'] = ''
+
+            # 执业印章号
+            print(n['registrationInfo'][0]['qualificationCertNumber'])
+            person_info['regNum'] = n['registrationInfo'][0]['qualificationCertNumber']
+
+            # 发证机关 ---待续
+
+            # 证件有效时间
+            try:
+                print(n['registrationInfo'][0]['registrationDt'])
+                c = time.localtime(int(n['registrationInfo'][0]['registrationDt'] / 1000))
+                use_time = time.strftime("%Y-%m-%d", c)
+                use_time = str(use_time)
+                person_info['validTime'] = use_time
+            except KeyError as e:
+                person_info['validTime'] = ''
+
+            # print(person_info)
+            print('注册人员信息%s' % person_info)
+            yield scrapy.FormRequest(
+                url='https://api.maotouin.com/rest/companyInfo/addCompanyRecordEngineer.htm',
+                formdata=person_info,
+                callback=self.person_zz,
+                meta={'company_name': response.meta['company_name']},
+                dont_filter=True
+            )
+
+    def not_person_info(self, response):
+        now_person = json.loads(response.text)
+        person_info = {'companyName': response.meta['company_name'], 'licenseNum': response.meta['number'],
+                       'area': '江西省', 'sex': ''}
+
+        for i in now_person['rows']:
+            # 人员名称
+            person_info['name'] = i['name']
+            # 联系电话
+            person_info['tel'] = i['mobileNum']
+            # 身份证
+            person_info['idCard'] = i['idNumber']
+            # 职称专业
+            if len(i['jobTitleCertInfo']) != 0:
+                # 职称
+                try:
+                    person_info['grade'] = i['titleLevel']['name']
+                except KeyError as e:
+                    person_info['grade'] = ''
+                # 职称专业
+                person_info['major'] = i['jobTitleCertInfo'][0]['specificTitleMajor']
+                # 证书编号
+                person_info['num'] = i['jobTitleCertInfo'][0]['certificateNumber']
+                # 发证时间
+                try:
+                    # 有效期
+                    c = time.localtime(int(i['jobTitleCertInfo'][0]['issuedDt'] / 1000))
+                    use_time = time.strftime("%Y-%m-%d", c)
+                    use_time = str(use_time)
+                    person_info['validTime'] = use_time
+                except KeyError as e:
+                    person_info['validTime'] = ''
+                person_info['regNum'] = ''
+                person_info['tokenKey'] = self.token
+
+                print('非人员信息%s' % person_info)
+                yield scrapy.FormRequest(
+                    url='https://api.maotouin.com/rest/companyInfo/addCompanyRecordEngineer.htm',
+                    formdata=person_info,
+                    callback=self.person_zz,
+                    meta={'company_name': response.meta['company_name']},
+                    dont_filter=True
+                )
+            else:
+                # 岗位
+                if i['positionCertInfos']:
+                    print('我是%s--非注册人员--公司是%s---' % (i['name'], response.meta['company_name']))
+                    try:
+                        person_info['grade'] = i['positionCertInfos'][0]['positionType']['name']
+                    except IndexError as e:
+                        person_info['grade'] = ''
+
+                    # 证书编号
+                    try:
+                        person_info['num'] = i['positionCertInfos'][0]['certificateNumber']
+                    except IndexError as e:
+                        person_info['num'] = ''
+                    # 有效期
+                    try:
+                        # 有效期
+                        c = time.localtime(int(i['positionCertInfos'][0]['expiryDt'] / 1000))
+                        use_time = time.strftime("%Y-%m-%d", c)
+                        use_time = str(use_time)
+                        person_info['validTime'] = use_time
+                    except KeyError as e:
+                        person_info['validTime'] = ''
+                    person_info['regNum'] = ''
+                    person_info['major'] = ''
+                    person_info['tokenKey'] = self.token
+                    print('非人员信息%s' % person_info)
+                    yield scrapy.FormRequest(
+                        url='https://api.maotouin.com/rest/companyInfo/addCompanyRecordEngineer.htm',
+                        formdata=person_info,
+                        callback=self.person_zz,
+                        meta={'company_name': response.meta['company_name']},
+                        dont_filter=True
+                    )
+                else:
+                    person_info['grade'] = ''
+                    person_info['major'] = ''
+                    person_info['validTime'] = ''
+                    person_info['num'] = ''
+                    person_info['regNum'] = ''
+                    person_info['tokenKey'] = self.token
+                    yield scrapy.FormRequest(
+                        url='https://api.maotouin.com/rest/companyInfo/addCompanyRecordEngineer.htm',
+                        formdata=person_info,
+                        callback=self.person_zz,
+                        meta={'company_name': response.meta['company_name']},
+                        dont_filter=True
+                    )
+
+    def person_zz(self, response):
+        not_company_code = json.loads(response.text)['code']
+        not_search_company_name = response.meta['company_name']
+        self.r.sadd('all_company_name', not_search_company_name)
+        print(response.text)
+        if not_company_code == -118:
+            self.r.sadd('title_name1', not_search_company_name)
+            self.r.sadd('title_name3', not_search_company_name)
+        else:
+            print('当前人员添加完成')

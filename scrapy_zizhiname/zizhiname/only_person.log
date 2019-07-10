@@ -1,0 +1,1021 @@
+2019-05-05 16:47:41 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: zizhiname)
+2019-05-05 16:47:41 [scrapy.utils.log] INFO: Versions: lxml 4.3.3.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.6.0 (v3.6.0:41df79263a11, Dec 23 2016, 07:18:10) [MSC v.1900 32 bit (Intel)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.6.1, Platform Windows-10-10.0.17763-SP0
+2019-05-05 16:47:41 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'zizhiname', 'DOWNLOAD_DELAY': 0.5, 'LOG_FILE': 'only_person.log', 'NEWSPIDER_MODULE': 'zizhiname.spiders', 'SPIDER_MODULES': ['zizhiname.spiders']}
+2019-05-05 16:47:41 [scrapy.extensions.telnet] INFO: Telnet Password: 7d79ed84b82072b9
+2019-05-05 16:47:41 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-05-05 16:47:41 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-05-05 16:47:41 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-05-05 16:47:41 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2019-05-05 16:47:41 [scrapy.core.engine] INFO: Spider opened
+2019-05-05 16:47:41 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-05-05 16:47:41 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-05-05 16:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://jzsc.mohurd.gov.cn/dataservice/query/comp/list> (referer: None)
+2019-05-05 16:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/comp/compDetail/001607220057209793> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/list)
+2019-05-05 16:47:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/compDetail/001607220057209793)
+2019-05-05 16:47:54 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081852834335> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2019-05-05 16:47:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903307321> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:47:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081858602784> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:47:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903274282> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:47:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081858605352> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:47:58 [root] ERROR: 	人员名称: 王爱利添加成功
+
+
+2019-05-05 16:48:00 [root] ERROR: 	人员名称: 吕小平添加成功
+
+
+2019-05-05 16:48:00 [root] ERROR: 	人员名称: 罗林华添加成功
+
+
+2019-05-05 16:48:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081852834335> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:02 [root] ERROR: 	人员名称: 罗林华添加成功
+
+
+2019-05-05 16:48:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001706100311919694> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001706070308831912> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:02 [root] ERROR: 	人员名称: 张冬琴添加成功
+
+
+2019-05-05 16:48:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081853072877> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001707070336004710> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:04 [root] ERROR: 	人员名称: 王强添加成功
+
+
+2019-05-05 16:48:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081853031066> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081853023934> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:06 [root] ERROR: 	人员名称: 陈斌添加成功
+
+
+2019-05-05 16:48:06 [root] ERROR: 	人员名称: 王强添加成功
+
+
+2019-05-05 16:48:06 [root] ERROR: 	人员名称: 杨鑫添加成功
+
+
+2019-05-05 16:48:07 [root] ERROR: 	人员名称: 谢京卫添加成功
+
+
+2019-05-05 16:48:09 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903307321)
+2019-05-05 16:48:10 [root] ERROR: 	人员名称: 谢京卫添加成功
+
+
+2019-05-05 16:48:10 [root] ERROR: 	人员名称: 刘岩添加成功
+
+
+2019-05-05 16:48:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001809110354318699> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:11 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903274282)
+2019-05-05 16:48:11 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:11 [root] ERROR: 	人员名称: 李静添加成功
+
+
+2019-05-05 16:48:12 [root] ERROR: 	人员名称: 邬永军添加成功
+
+
+2019-05-05 16:48:12 [root] ERROR: 	人员名称: 谢京卫添加成功
+
+
+2019-05-05 16:48:12 [root] ERROR: 	人员名称: 刘岩添加成功
+
+
+2019-05-05 16:48:13 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081858602784)
+2019-05-05 16:48:13 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001706100311919694)
+2019-05-05 16:48:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903325476> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:13 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:13 [root] ERROR: 	人员名称: 李静添加成功
+
+
+2019-05-05 16:48:13 [root] ERROR: 	人员名称: 邬永军添加成功
+
+
+2019-05-05 16:48:13 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903274282)
+2019-05-05 16:48:13 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081852834335)
+2019-05-05 16:48:14 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:14 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:14 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001706070308831912)
+2019-05-05 16:48:14 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081858605352)
+2019-05-05 16:48:14 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:14 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:14 [root] ERROR: 	人员名称: 高建军添加成功
+
+
+2019-05-05 16:48:14 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081853072877)
+2019-05-05 16:48:15 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:15 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:15 [root] ERROR: 	人员名称: 梁艺君添加成功
+
+
+2019-05-05 16:48:15 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081852834335)
+2019-05-05 16:48:15 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:15 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081853023934)
+2019-05-05 16:48:15 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:15 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:15 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903303449> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:48:15 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081853031066)
+2019-05-05 16:48:15 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001809110354318701> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:16 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001707070336004710)
+2019-05-05 16:48:16 [root] ERROR: 	人员名称: 盖东兴添加成功
+
+
+2019-05-05 16:48:16 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:16 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001809110354318699)
+2019-05-05 16:48:16 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081858640982> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903301794> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081858640230> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:17 [root] ERROR: 	人员名称: 李国栋添加成功
+
+
+2019-05-05 16:48:17 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081853072877)
+2019-05-05 16:48:18 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:18 [root] ERROR: 	人员名称: 高洁芳添加成功
+
+
+2019-05-05 16:48:18 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903325476)
+2019-05-05 16:48:18 [root] ERROR: 	人员名称: 邓雪莹添加成功
+
+
+2019-05-05 16:48:19 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:19 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081853023934)
+2019-05-05 16:48:19 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:19 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081853031066)
+2019-05-05 16:48:19 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001811130337414212> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:20 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001707070336004710)
+2019-05-05 16:48:20 [root] ERROR: 	人员名称: 盛超添加成功
+
+
+2019-05-05 16:48:20 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:21 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081853072877)
+2019-05-05 16:48:21 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:21 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001809110354318701)
+2019-05-05 16:48:21 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081857594464> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:22 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001709061131968698> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081858640983> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903303449> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:23 [root] ERROR: 	人员名称: 戴永常添加成功
+
+
+2019-05-05 16:48:24 [root] ERROR: 	人员名称: 戴永常添加成功
+
+
+2019-05-05 16:48:24 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081858640982)
+2019-05-05 16:48:26 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903301794)
+2019-05-05 16:48:26 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:26 [root] ERROR: 	人员名称: 张纪安添加成功
+
+
+2019-05-05 16:48:26 [root] ERROR: 	人员名称: 任正勇添加成功
+
+
+2019-05-05 16:48:26 [root] ERROR: 	人员名称: 李小明添加成功
+
+
+2019-05-05 16:48:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001810180342118884> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:27 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:27 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081858640230)
+2019-05-05 16:48:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081858647732> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:29 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:29 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001811130337414212)
+2019-05-05 16:48:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081858621641> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903304320> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:29 [root] ERROR: 	人员名称: 韩晓东添加成功
+
+
+2019-05-05 16:48:30 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081857594464)
+2019-05-05 16:48:30 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:30 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:30 [root] ERROR: 	人员名称: 李志国添加成功
+
+
+2019-05-05 16:48:31 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081857594464)
+2019-05-05 16:48:31 [root] ERROR: 	人员名称: 李建斌添加成功
+
+
+2019-05-05 16:48:31 [root] ERROR: 	人员名称: 商馥荔添加成功
+
+
+2019-05-05 16:48:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001703210312404024> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:31 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:31 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903303449)
+2019-05-05 16:48:32 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:32 [root] ERROR: 	人员名称: 邹永军添加成功
+
+
+2019-05-05 16:48:32 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081858640983)
+2019-05-05 16:48:32 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:33 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001709061131968698)
+2019-05-05 16:48:33 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:34 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001810180342118884)
+2019-05-05 16:48:34 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:34 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081858647732)
+2019-05-05 16:48:34 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:35 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903304320)
+2019-05-05 16:48:35 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081858663041> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:36 [root] ERROR: 	人员名称: 葛志贤添加成功
+
+
+2019-05-05 16:48:36 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081858621641)
+2019-05-05 16:48:36 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:36 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001703210312404024)
+2019-05-05 16:48:37 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:37 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081858663041)
+2019-05-05 16:48:37 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081904346967> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001703070250338427> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057209793)
+2019-05-05 16:48:41 [root] ERROR: 	人员名称: 王芳华添加成功
+
+
+2019-05-05 16:48:41 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081904346967)
+2019-05-05 16:48:41 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:41 [scrapy.extensions.logstats] INFO: Crawled 71 pages (at 71 pages/min), scraped 0 items (at 0 items/min)
+2019-05-05 16:48:41 [root] ERROR: 	人员名称: 卢志立添加成功
+
+
+2019-05-05 16:48:41 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001703070250338427)
+2019-05-05 16:48:41 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:48:41 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-05-05 16:48:41 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 45141,
+ 'downloader/request_count': 73,
+ 'downloader/request_method_count/GET': 33,
+ 'downloader/request_method_count/POST': 40,
+ 'downloader/response_bytes': 134389,
+ 'downloader/response_count': 73,
+ 'downloader/response_status_count/200': 72,
+ 'downloader/response_status_count/502': 1,
+ 'dupefilter/filtered': 5,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 5, 5, 8, 48, 41, 925864),
+ 'log_count/DEBUG': 74,
+ 'log_count/ERROR': 76,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 5,
+ 'response_received_count': 72,
+ 'retry/count': 1,
+ 'retry/reason_count/502 Bad Gateway': 1,
+ 'scheduler/dequeued': 73,
+ 'scheduler/dequeued/memory': 73,
+ 'scheduler/enqueued': 73,
+ 'scheduler/enqueued/memory': 73,
+ 'start_time': datetime.datetime(2019, 5, 5, 8, 47, 41, 635464)}
+2019-05-05 16:48:41 [scrapy.core.engine] INFO: Spider closed (finished)
+2019-05-05 16:52:19 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: zizhiname)
+2019-05-05 16:52:19 [scrapy.utils.log] INFO: Versions: lxml 4.3.3.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.6.0 (v3.6.0:41df79263a11, Dec 23 2016, 07:18:10) [MSC v.1900 32 bit (Intel)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.6.1, Platform Windows-10-10.0.17763-SP0
+2019-05-05 16:52:19 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'zizhiname', 'DOWNLOAD_DELAY': 0.5, 'LOG_FILE': 'only_person.log', 'NEWSPIDER_MODULE': 'zizhiname.spiders', 'SPIDER_MODULES': ['zizhiname.spiders']}
+2019-05-05 16:52:19 [scrapy.extensions.telnet] INFO: Telnet Password: f455fc3ddb1a98a9
+2019-05-05 16:52:19 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-05-05 16:52:20 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-05-05 16:52:20 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-05-05 16:52:20 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2019-05-05 16:52:20 [scrapy.core.engine] INFO: Spider opened
+2019-05-05 16:52:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-05-05 16:52:20 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-05-05 16:52:20 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <POST http://jzsc.mohurd.gov.cn/dataservice/query/comp/list> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:52:23 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://jzsc.mohurd.gov.cn/dataservice/query/comp/list> (referer: None)
+2019-05-05 16:52:23 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/comp/compDetail/001610111423012125> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:52:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/comp/compDetail/001610111423012125> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/list)
+2019-05-05 16:52:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/compDetail/001610111423012125)
+2019-05-05 16:52:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845934930> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:52:32 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081859766686> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:52:32 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081859745386> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:52:32 [root] ERROR: 	人员名称: 李玉建添加成功
+
+
+2019-05-05 16:52:34 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845931153> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:52:34 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845948984> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:52:34 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845947303> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:52:37 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845934930)
+2019-05-05 16:52:37 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:52:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845919666> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:52:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081859745386> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:52:42 [root] ERROR: 	人员名称: 李超群添加成功
+
+
+2019-05-05 16:52:43 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845919666)
+2019-05-05 16:52:43 [root] ERROR: 	人员名称: 李超群添加成功
+
+
+2019-05-05 16:52:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081859766686> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:52:44 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:52:44 [root] ERROR: 	人员名称: 孙井民添加成功
+
+
+2019-05-05 16:52:44 [root] ERROR: 	人员名称: 李超群添加成功
+
+
+2019-05-05 16:52:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845921642> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:52:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845917318> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:52:44 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081859745386)
+2019-05-05 16:52:44 [root] ERROR: 	人员名称: 孙井民添加成功
+
+
+2019-05-05 16:52:45 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081859745386)
+2019-05-05 16:52:45 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845947303> (failed 2 times): 502 Bad Gateway
+2019-05-05 16:52:45 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:52:45 [root] ERROR: 	人员名称: 孙卓亚添加成功
+
+
+2019-05-05 16:52:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081859766313> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:52:46 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001703070250339161> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:52:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845948984> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:52:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845931153> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:52:46 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:52:46 [root] ERROR: 	人员名称: 郑士杰添加成功
+
+
+2019-05-05 16:52:46 [root] ERROR: 	人员名称: 宁晓宇添加成功
+
+
+2019-05-05 16:52:47 [root] ERROR: 	人员名称: 郑士杰添加成功
+
+
+2019-05-05 16:52:47 [root] ERROR: 	人员名称: 宁晓宇添加成功
+
+
+2019-05-05 16:52:49 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845919666)
+2019-05-05 16:52:49 [root] ERROR: 	人员名称: 周淑芳添加成功
+
+
+2019-05-05 16:52:49 [root] ERROR: 	人员名称: 张树民添加成功
+
+
+2019-05-05 16:52:49 [root] ERROR: 	人员名称: 张微添加成功
+
+
+2019-05-05 16:52:50 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:52:50 [root] ERROR: 	人员名称: 张树民添加成功
+
+
+2019-05-05 16:52:50 [root] ERROR: 	人员名称: 张微添加成功
+
+
+2019-05-05 16:52:50 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001710190309066076> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:52:50 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081859766686)
+2019-05-05 16:52:50 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081859767498> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:52:50 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:52:50 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845919666)
+2019-05-05 16:52:50 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845917318)
+2019-05-05 16:52:50 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:52:50 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:52:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001612081448195829> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:52:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081904349659> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:52:50 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845921642)
+2019-05-05 16:52:51 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:52:51 [root] ERROR: 	人员名称: 初域彬添加成功
+
+
+2019-05-05 16:52:52 [root] ERROR: 	人员名称: 初域彬添加成功
+
+
+2019-05-05 16:52:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845921402> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:52:52 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845931153)
+2019-05-05 16:52:52 [root] ERROR: 	人员名称: 王刚添加成功
+
+
+2019-05-05 16:52:53 [root] ERROR: 	人员名称: 初域彬添加成功
+
+
+2019-05-05 16:52:53 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845948984)
+2019-05-05 16:52:53 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:52:53 [root] ERROR: 	人员名称: 王刚添加成功
+
+
+2019-05-05 16:52:54 [root] ERROR: 	人员名称: 初域彬添加成功
+
+
+2019-05-05 16:52:54 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:52:54 [root] ERROR: 	人员名称: 王刚添加成功
+
+
+2019-05-05 16:52:54 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845931153)
+2019-05-05 16:52:54 [root] ERROR: 	人员名称: 汪雪菲添加成功
+
+
+2019-05-05 16:52:55 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845948984)
+2019-05-05 16:52:55 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:52:55 [root] ERROR: 	人员名称: 汪雪菲添加成功
+
+
+2019-05-05 16:52:55 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:52:55 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081859766313)
+2019-05-05 16:52:55 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:52:56 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854189771> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:52:56 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845917318)
+2019-05-05 16:52:56 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:52:56 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854189793> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:52:56 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001902080406577501> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:52:57 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845921642)
+2019-05-05 16:52:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854202717> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:52:57 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:52:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001612230301255474> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:52:57 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:52:57 [root] ERROR: 	人员名称: 白喜军添加成功
+
+
+2019-05-05 16:52:58 [root] ERROR: 	人员名称: 白喜军添加成功
+
+
+2019-05-05 16:52:59 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081904349659)
+2019-05-05 16:52:59 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001902080406577500> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:52:59 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001612081448195829)
+2019-05-05 16:52:59 [root] ERROR: 	人员名称: 朱新宇添加成功
+
+
+2019-05-05 16:53:00 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:00 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:00 [root] ERROR: 	人员名称: 朱新宇添加成功
+
+
+2019-05-05 16:53:00 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081904349659)
+2019-05-05 16:53:01 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001612230301255474> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2019-05-05 16:53:01 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845921402)
+2019-05-05 16:53:01 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001902080406577497> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:53:01 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845940995> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:53:01 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:02 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845921402)
+2019-05-05 16:53:03 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001612081448195829)
+2019-05-05 16:53:03 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:04 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:04 [root] ERROR: 	人员名称: 马胜男添加成功
+
+
+2019-05-05 16:53:04 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081904349659)
+2019-05-05 16:53:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001902080406577501> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:53:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854199451> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:53:05 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:05 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001612081448195829)
+2019-05-05 16:53:06 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001612081448195829)
+2019-05-05 16:53:06 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001902080406577496> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:53:07 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:07 [root] ERROR: 	人员名称: 赵杨添加成功
+
+
+2019-05-05 16:53:07 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854202717)
+2019-05-05 16:53:08 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001612230301255474)
+2019-05-05 16:53:08 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:08 [root] ERROR: 	人员名称: 刘林嘉添加成功
+
+
+2019-05-05 16:53:08 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001612230301255474)
+2019-05-05 16:53:08 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:08 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854189793> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:53:09 [root] ERROR: 	人员名称: 蔡迎春添加成功
+
+
+2019-05-05 16:53:09 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854202717)
+2019-05-05 16:53:09 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:10 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854199451> (failed 2 times): 502 Bad Gateway
+2019-05-05 16:53:10 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001902080406577497)
+2019-05-05 16:53:10 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:10 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081853034847> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:53:10 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001902080406577501)
+2019-05-05 16:53:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854191990> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:53:10 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081902182473> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:53:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845942065> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:53:11 [root] ERROR: 	人员名称: 韩宇翔添加成功
+
+
+2019-05-05 16:53:12 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001902080406577496)
+2019-05-05 16:53:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854201959> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:53:12 [root] ERROR: 	人员名称: 吕志强添加成功
+
+
+2019-05-05 16:53:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854190900> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:53:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845940995> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:53:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610140209543688> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:53:12 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:12 [root] ERROR: 	人员名称: 王海龙添加成功
+
+
+2019-05-05 16:53:12 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854189793)
+2019-05-05 16:53:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001902080406577500> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:53:14 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:14 [root] ERROR: 	人员名称: 徐欢添加成功
+
+
+2019-05-05 16:53:14 [root] ERROR: 	人员名称: 刘伟平添加成功
+
+
+2019-05-05 16:53:15 [root] ERROR: 	人员名称: 于微添加成功
+
+
+2019-05-05 16:53:15 [root] ERROR: 	人员名称: 徐欢添加成功
+
+
+2019-05-05 16:53:15 [root] ERROR: 	人员名称: 刘伟平添加成功
+
+
+2019-05-05 16:53:15 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854191990)
+2019-05-05 16:53:16 [root] ERROR: 	人员名称: 刘伟平添加成功
+
+
+2019-05-05 16:53:16 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:16 [root] ERROR: 	人员名称: 赵鸿添加成功
+
+
+2019-05-05 16:53:16 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081902182473)
+2019-05-05 16:53:16 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:17 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845942065)
+2019-05-05 16:53:17 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:17 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854190900)
+2019-05-05 16:53:17 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854189771> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:53:18 [root] ERROR: 	人员名称: 迟利娜添加成功
+
+
+2019-05-05 16:53:18 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610140209543688)
+2019-05-05 16:53:18 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081859767498> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:53:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001703070250339161> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:53:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081853034847> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:53:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001710190309066076> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:53:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854199451> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:53:19 [root] ERROR: 	人员名称: 刘海宏添加成功
+
+
+2019-05-05 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845940995)
+2019-05-05 16:53:20 [scrapy.extensions.logstats] INFO: Crawled 74 pages (at 74 pages/min), scraped 0 items (at 0 items/min)
+2019-05-05 16:53:20 [root] ERROR: 	人员名称: 秦聪添加成功
+
+
+2019-05-05 16:53:22 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:22 [root] ERROR: 	人员名称: 秦聪添加成功
+
+
+2019-05-05 16:53:22 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610140209543688)
+2019-05-05 16:53:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845947303> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:53:22 [root] ERROR: 	人员名称: 姜兴旭添加成功
+
+
+2019-05-05 16:53:23 [root] ERROR: 	人员名称: 于显峰添加成功
+
+
+2019-05-05 16:53:23 [root] ERROR: 	人员名称: 吴俐丽添加成功
+
+
+2019-05-05 16:53:23 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845940995)
+2019-05-05 16:53:23 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854201959> (failed 2 times): 502 Bad Gateway
+2019-05-05 16:53:23 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:23 [root] ERROR: 	人员名称: 姜兴旭添加成功
+
+
+2019-05-05 16:53:24 [root] ERROR: 	人员名称: 于显峰添加成功
+
+
+2019-05-05 16:53:24 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:24 [root] ERROR: 	人员名称: 姜兴旭添加成功
+
+
+2019-05-05 16:53:25 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854201959> (failed 3 times): 502 Bad Gateway
+2019-05-05 16:53:25 [scrapy.core.engine] DEBUG: Crawled (502) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854201959> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001610111423012125)
+2019-05-05 16:53:25 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001902080406577500)
+2019-05-05 16:53:25 [root] ERROR: 	人员名称: 王春光添加成功
+
+
+2019-05-05 16:53:25 [root] ERROR: 	人员名称: 姜兴旭添加成功
+
+
+2019-05-05 16:53:25 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <502 http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854201959>: HTTP status code is not handled or not allowed
+2019-05-05 16:53:25 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:25 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610140209543688)
+2019-05-05 16:53:25 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:25 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854189771)
+2019-05-05 16:53:25 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:26 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081859767498)
+2019-05-05 16:53:26 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:26 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001703070250339161)
+2019-05-05 16:53:26 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:27 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854199451)
+2019-05-05 16:53:27 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:27 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001710190309066076)
+2019-05-05 16:53:28 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:28 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081853034847)
+2019-05-05 16:53:28 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:29 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001703070250339161)
+2019-05-05 16:53:29 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:29 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001710190309066076)
+2019-05-05 16:53:29 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:30 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081853034847)
+2019-05-05 16:53:30 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:30 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081853034847)
+2019-05-05 16:53:31 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:31 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081853034847)
+2019-05-05 16:53:31 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:32 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081845947303)
+2019-05-05 16:53:32 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:53:32 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-05-05 16:53:32 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 67280,
+ 'downloader/request_count': 113,
+ 'downloader/request_method_count/GET': 55,
+ 'downloader/request_method_count/POST': 58,
+ 'downloader/response_bytes': 152384,
+ 'downloader/response_count': 113,
+ 'downloader/response_status_count/200': 91,
+ 'downloader/response_status_count/502': 22,
+ 'dupefilter/filtered': 7,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 5, 5, 8, 53, 32, 462614),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/502': 1,
+ 'log_count/DEBUG': 115,
+ 'log_count/ERROR': 110,
+ 'log_count/INFO': 11,
+ 'request_depth_max': 5,
+ 'response_received_count': 92,
+ 'retry/count': 21,
+ 'retry/max_reached': 1,
+ 'retry/reason_count/502 Bad Gateway': 21,
+ 'scheduler/dequeued': 113,
+ 'scheduler/dequeued/memory': 113,
+ 'scheduler/enqueued': 113,
+ 'scheduler/enqueued/memory': 113,
+ 'start_time': datetime.datetime(2019, 5, 5, 8, 52, 20, 119739)}
+2019-05-05 16:53:32 [scrapy.core.engine] INFO: Spider closed (finished)
+2019-05-05 16:56:57 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: zizhiname)
+2019-05-05 16:56:57 [scrapy.utils.log] INFO: Versions: lxml 4.3.3.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.6.0 (v3.6.0:41df79263a11, Dec 23 2016, 07:18:10) [MSC v.1900 32 bit (Intel)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.6.1, Platform Windows-10-10.0.17763-SP0
+2019-05-05 16:56:57 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'zizhiname', 'DOWNLOAD_DELAY': 0.5, 'LOG_FILE': 'only_person.log', 'NEWSPIDER_MODULE': 'zizhiname.spiders', 'SPIDER_MODULES': ['zizhiname.spiders']}
+2019-05-05 16:56:57 [scrapy.extensions.telnet] INFO: Telnet Password: d9faa5f185576987
+2019-05-05 16:56:57 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-05-05 16:56:58 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-05-05 16:56:58 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-05-05 16:56:58 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2019-05-05 16:56:58 [scrapy.core.engine] INFO: Spider opened
+2019-05-05 16:56:58 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-05-05 16:56:58 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-05-05 16:57:00 [scrapy.core.engine] DEBUG: Crawled (200) <POST http://jzsc.mohurd.gov.cn/dataservice/query/comp/list> (referer: None)
+2019-05-05 16:57:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/comp/compDetail/001607220057242676> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/list)
+2019-05-05 16:57:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057242676> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:57:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057242676> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/compDetail/001607220057242676)
+2019-05-05 16:57:09 [root] ERROR: ------人员无分页
+
+
+2019-05-05 16:57:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903272092> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:57:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081857484272> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:57:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903263544> (failed 1 times): 502 Bad Gateway
+2019-05-05 16:57:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081858605418> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057242676)
+2019-05-05 16:57:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081857482102> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057242676)
+2019-05-05 16:57:15 [root] ERROR: 	人员名称: 武旭民添加成功
+
+
+2019-05-05 16:57:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081857489713> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057242676)
+2019-05-05 16:57:16 [root] ERROR: 	人员名称: 吝满盈添加成功
+
+
+2019-05-05 16:57:17 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081858605418)
+2019-05-05 16:57:17 [root] ERROR: 	人员名称: 赵温侠添加成功
+
+
+2019-05-05 16:57:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081856440512> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057242676)
+2019-05-05 16:57:17 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081857489713)
+2019-05-05 16:57:17 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:57:17 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081857482102)
+2019-05-05 16:57:17 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:57:17 [root] ERROR: 	人员名称: 赵志涛添加成功
+
+
+2019-05-05 16:57:17 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081856440512)
+2019-05-05 16:57:17 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:57:17 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:57:18 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903272092> (failed 2 times): 502 Bad Gateway
+2019-05-05 16:57:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001711220309252781> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057242676)
+2019-05-05 16:57:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081902133327> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057242676)
+2019-05-05 16:57:19 [root] ERROR: 	人员名称: 李军添加成功
+
+
+2019-05-05 16:57:19 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001711220309252781)
+2019-05-05 16:57:20 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:57:20 [root] ERROR: 	人员名称: 孙华添加成功
+
+
+2019-05-05 16:57:20 [root] ERROR: 	人员名称: 孙华添加成功
+
+
+2019-05-05 16:57:20 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081902133327)
+2019-05-05 16:57:21 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:57:21 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081902133327)
+2019-05-05 16:57:21 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:57:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081857484272> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057242676)
+2019-05-05 16:57:25 [root] ERROR: 	人员名称: 姬建岗添加成功
+
+
+2019-05-05 16:57:25 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081857484272)
+2019-05-05 16:57:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903263544> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057242676)
+2019-05-05 16:57:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903272092> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057242676)
+2019-05-05 16:57:25 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:57:25 [root] ERROR: 	人员名称: 高甲添加成功
+
+
+2019-05-05 16:57:26 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903263544)
+2019-05-05 16:57:26 [root] ERROR: 	人员名称: 李永强添加成功
+
+
+2019-05-05 16:57:26 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:57:26 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081903272092)
+2019-05-05 16:57:26 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:57:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854185897> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/comp/regStaffList/001607220057242676)
+2019-05-05 16:57:27 [root] ERROR: 	人员名称: 张建军添加成功
+
+
+2019-05-05 16:57:27 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://api.maotouin.com/rest/companyInfo/addCompanyEngineer.htm> (referer: http://jzsc.mohurd.gov.cn/dataservice/query/staff/staffDetail/001610081854185897)
+2019-05-05 16:57:27 [root] ERROR: {"msg":"成功","code":0}
+
+
+2019-05-05 16:57:27 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-05-05 16:57:27 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 16396,
+ 'downloader/request_count': 29,
+ 'downloader/request_method_count/GET': 17,
+ 'downloader/request_method_count/POST': 12,
+ 'downloader/response_bytes': 52475,
+ 'downloader/response_count': 29,
+ 'downloader/response_status_count/200': 24,
+ 'downloader/response_status_count/502': 5,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 5, 5, 8, 57, 27, 951663),
+ 'log_count/DEBUG': 29,
+ 'log_count/ERROR': 23,
+ 'log_count/INFO': 9,
+ 'request_depth_max': 4,
+ 'response_received_count': 24,
+ 'retry/count': 5,
+ 'retry/reason_count/502 Bad Gateway': 5,
+ 'scheduler/dequeued': 29,
+ 'scheduler/dequeued/memory': 29,
+ 'scheduler/enqueued': 29,
+ 'scheduler/enqueued/memory': 29,
+ 'start_time': datetime.datetime(2019, 5, 5, 8, 56, 58, 24587)}
+2019-05-05 16:57:27 [scrapy.core.engine] INFO: Spider closed (finished)

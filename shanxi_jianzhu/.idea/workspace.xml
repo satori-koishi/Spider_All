@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a2569399-2474-456f-bbe1-0d1280c7c57b" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/middlewares.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="143" column="48" selection-start-line="143" selection-start-column="48" selection-end-line="143" selection-end-column="48" />
+              <folding>
+                <element signature="e#169#195#0" expanded="true" />
+                <element signature="e#331#1993#0" />
+                <element signature="e#2049#3692#0" />
+                <element signature="e#3749#4137#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/guizhou.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="673">
+              <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ooo2</find>
+      <find>oo2</find>
+      <find>技术人员</find>
+      <find>专业岗位证书</find>
+      <find>安全三类人员</find>
+      <find>职业人员</find>
+      <find>注册人员</find>
+      <find>send</find>
+      <find>send1</find>
+      <find>send2</find>
+      <find>send3</find>
+      <find>send4</find>
+      <find>send5</find>
+      <find>send6</find>
+      <find>职业技能人员</find>
+      <find>getLog</find>
+      <find>getKfkClient</find>
+      <find>SpiderContext</find>
+      <find>domain</find>
+      <find>getLogger</find>
+      <find>fild</find>
+      <find>FILD</find>
+      <find>LOG_ENCODING</find>
+      <find>LOG_FILE</find>
+      <find>install_scrapy_root_handler</find>
+      <find>_get_handler</find>
+      <find>start</find>
+      <find>validTime</find>
+      <find>email</find>
+      <find>6800</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$USER_HOME$/Desktop/settings.py" />
+        <option value="$USER_HOME$/Desktop/Liaoning.py" />
+        <option value="$USER_HOME$/Desktop/another_province_into_guizhou.log" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/zhejiang.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/onther_province_shanxi_see.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/onther_province_shanxi_tendering.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/hebei.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/Liaoning.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/shanxi_jianzhu_imformation.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/onther_provinces_shanxi.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/shandong.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/hubei.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/jiangxi.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/strange_fujian.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/strange_other_fujian.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/reverse_zhejiang.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/another_province_shanxi_survey.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/new_data_hubei.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/another_into_hebei.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/Liaoning_outside.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/henan.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/other_province_jiangxi.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/other_province_qinghai.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/other_person_xizang.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/another_into_guizhou.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/xizang.py" />
+        <option value="$USER_HOME$/Documents/Tencent Files/1056997063/FileRecv/备案.sql" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/pipelines.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/another_province_into_guizhou.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/qinghai.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/new_other_povince_hubei.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/zzzzzzzzzzzzzzzzzzzz__jilin.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/another_into_xinjiang.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/another_into_province_fujain.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/jilin.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/another_into_jilin.py" />
+        <option value="$USER_HOME$/Desktop/scrapydweb_settings_v8.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/zhejiang_person.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/other_person_qinghai.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/another_province_into_qinghai.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/zz.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/another_into_province_henan.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/another_province_shandong.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/other_person_xinjiang.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/settings.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/make_into_shanxi.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/guangxi.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/another_province_into_zhejiang.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/text.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/fujian.py" />
+        <option value="$PROJECT_DIR$/shanxi_jianzhu/spiders/guizhou.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="366" />
+    <option name="y" value="207" />
+    <option name="width" value="1060" />
+    <option name="height" value="660" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="another_province_into_shanxi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shanxi_jianzhu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="another_province_into_shanxi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shanxi_jianzhu" type="462c0819:PsiDirectoryNode" />
+              <item name="shanxi_jianzhu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="another_province_into_shanxi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shanxi_jianzhu" type="462c0819:PsiDirectoryNode" />
+              <item name="shanxi_jianzhu" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\shanxi_jianzhu\shanxi_jianzhu\spiders" />
+      <recent name="D:\shanxi_jianzhu\shanxi_jianzhu" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\shanxi_jianzhu\shanxi_jianzhu\spiders" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.text">
+    <configuration name="another_province_into_guizhou" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="another_province_into_shanxi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/shanxi_jianzhu/spiders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shanxi_jianzhu/spiders/another_province_into_guizhou.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="henan" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="another_province_into_shanxi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/shanxi_jianzhu/spiders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shanxi_jianzhu/spiders/henan.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mmmmmmmmmmmmm" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="another_province_into_shanxi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/shanxi_jianzhu/spiders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shanxi_jianzhu/spiders/mmmmmmmmmmmmm.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="other_province_jiangxi" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="another_province_into_shanxi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/shanxi_jianzhu/spiders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shanxi_jianzhu/spiders/other_province_jiangxi.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="text" type="PythonConfigurationType" factoryName="Python">
+      <module name="another_province_into_shanxi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/shanxi_jianzhu" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shanxi_jianzhu/text.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="zz" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="another_province_into_shanxi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/shanxi_jianzhu/spiders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shanxi_jianzhu/spiders/zz.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.zz" />
+        <item itemvalue="Python.other_province_jiangxi" />
+        <item itemvalue="Python.mmmmmmmmmmmmm" />
+        <item itemvalue="Python.another_province_into_guizhou" />
+        <item itemvalue="Python.henan" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a2569399-2474-456f-bbe1-0d1280c7c57b" name="Default Changelist" comment="" />
+      <created>1554094086520</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554094086520</updated>
+      <workItem from="1557036287916" duration="6954000" />
+      <workItem from="1557101590781" duration="35032000" />
+      <workItem from="1557274093196" duration="17426000" />
+      <workItem from="1558490750143" duration="289000" />
+      <workItem from="1558509885027" duration="3861000" />
+      <workItem from="1559094146334" duration="112000" />
+      <workItem from="1560823512183" duration="5086000" />
+      <workItem from="1561076811184" duration="523000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="69283000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49186993" visible="true" weight="0.22855228" />
+      <window_info id="Structure" order="1" sideWeight="0.5081301" side_tool="true" weight="0.16689008" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.73253834" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49476832" weight="0.10327456" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.69165486" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.7410562" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49327356" weight="0.15700142" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50672644" side_tool="true" weight="0.14480409" />
+      <window_info anchor="bottom" id="TODO" order="10" sideWeight="0.49850523" weight="0.67972744" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49446493" visible="true" weight="0.24463807" />
+      <window_info id="Structure" order="1" sideWeight="0.50553507" side_tool="true" weight="0.24813154" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.73253834" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49476832" weight="0.36350778" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6930693" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.7410562" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49327356" visible="true" weight="0.042432815" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50672644" side_tool="true" weight="0.14480409" />
+      <window_info anchor="bottom" id="TODO" order="10" sideWeight="0.49850523" weight="0.67972744" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/another_province_into_shanxi$zz.coverage" NAME="zz Coverage Results" MODIFIED="1557209289292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shanxi_jianzhu/spiders" />
+    <SUITE FILE_PATH="coverage/another_province_into_shanxi$text.coverage" NAME="text Coverage Results" MODIFIED="1558510494550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shanxi_jianzhu" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/jilin.log" />
+    <entry file="file://$PROJECT_DIR$/other_guizhou.log" />
+    <entry file="file://$PROJECT_DIR$/guizhou.log" />
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/xiangbei.py" />
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/zz.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/scrapydweb_settings_v8.py" />
+    <entry file="file://$USER_HOME$/Desktop/default_scrapyd.conf" />
+    <entry file="file://$USER_HOME$/Desktop/hebei.log" />
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/hebei.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-486">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/hubei.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/jilin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="40" lean-forward="true" selection-end-line="98" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/Liaoning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1327">
+          <caret line="77" column="31" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/settings.py" />
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/another_into_jilin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="154" column="46" lean-forward="true" selection-end-line="265" selection-end-column="56" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/another_into_xinjiang.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2187">
+          <caret line="88" column="21" lean-forward="true" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/another_province_into_guangdong.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/another_province_shandong.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/shandong.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/Liaoning_outside.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="47" column="35" lean-forward="true" selection-end-line="98" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/another_into_province_henan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-970">
+          <caret line="22" column="48" lean-forward="true" selection-end-line="148" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/new_data_hubei.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1375">
+          <caret selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/henan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="76" column="34" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/strange_fujian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy.cfg" />
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/other_province_jiangxi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-567">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/jiangxi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/strange_other_fujian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/redis/connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="939" column="8" selection-start-line="939" selection-start-column="8" selection-end-line="939" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/another_province_into_qinghai.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="31" column="30" lean-forward="true" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/xizang.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4778">
+          <caret line="19" column="50" lean-forward="true" selection-end-line="229" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/qinghai.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-648">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/make_into_shanxi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/another_into_hebei.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/anhui.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/guangxi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="61" column="40" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="141" column="42" selection-start-line="141" selection-start-column="42" selection-end-line="141" selection-end-column="42" />
+          <folding>
+            <element signature="e#3248#7632#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/zhejiang.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="56" column="42" lean-forward="true" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/other_person_qinghai.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="212" column="24" selection-end-line="334" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/onther_provinces_shanxi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-232">
+          <caret line="16" column="24" lean-forward="true" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/shanxi_jianzhu_imformation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/another_province_into_zhejiang.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/zhejiang_person.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="22" lean-forward="true" selection-end-line="265" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/another_into_province_fujain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="53" column="34" lean-forward="true" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/new_other_povince_hubei.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="805">
+          <caret line="160" column="91" selection-start-line="160" selection-start-column="67" selection-end-line="160" selection-end-column="91" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/other_person_xinjiang.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/another_province_into_guizhou.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/fujian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="916">
+          <caret line="58" column="43" lean-forward="true" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="143" column="48" selection-start-line="143" selection-start-column="48" selection-end-line="143" selection-end-column="48" />
+          <folding>
+            <element signature="e#169#195#0" expanded="true" />
+            <element signature="e#331#1993#0" />
+            <element signature="e#2049#3692#0" />
+            <element signature="e#3749#4137#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shanxi_jianzhu/spiders/guizhou.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

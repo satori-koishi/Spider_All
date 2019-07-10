@@ -1,0 +1,88 @@
+# -*- coding: utf-8 -*-
+import scrapy
+import redis
+from scrapy import Selector
+from scrapy.http import Request
+import re
+import json
+
+
+class JiangXiProvince(scrapy.Spider):
+
+    name = 'JiangXiProvince'
+
+    def __init__(self, name=None, **kwargs):
+        super().__init__(name=None, **kwargs)
+        self.url = 'http://59.52.254.106:8093/qualificationCertificateListForPublic'
+        pool = redis.ConnectionPool(host='106.12.112.207', password='tongna888')
+        self.r = redis.Redis(connection_pool=pool)
+        self.flag = True
+        self.bigurl = 'http://59.52.254.106:8093'
+        self.token = 'LnHRF8R1jmqOLFnnK048DcokeilQRDS2'
+        self.number = 5
+
+    def start_requests(self):
+        yield scrapy.Request(url=self.url, callback=self.page_transfer)
+
+    def page_transfer(self, response):
+        all_data = Selector(response=response).xpath('//span[@class="localPage"]')[1].xpath('text()').extract_first()
+        page = int(all_data)//10 + 1
+        url = 'http://59.52.254.106:8093/qualificationCertificateListForPublic?pageIndex=%s' % page
+        yield scrapy.Request(url=url, callback=self.parse,
+                             meta={'page': page}
+                             )
+
+    def parse(self, response):
+        div_under_table = Selector(response).xpath('//table [@class="listTable hoverTable trbgTable detailPopupTable"]/tr/td[3]/a/@onclick')
+        print(len(div_under_table))
+        for d in div_under_table:
+            url = d.extract()
+            new_url = re.findall("winopen\('(.*)',1000,500,'详情'\);", url)[0]
+            new_url = self.bigurl + new_url
+            print(new_url)
+            yield scrapy.Request(url=new_url, callback=self.company_information)
+        print(response.meta['page'], type(response.meta['page']))
+        page = int(response.meta['page'])
+        page -= 1
+        self.number -= 1
+        if page != 0:
+            url = 'http://59.52.254.106:8093/qualificationCertificateListForPublic?pageIndex=%s' % page
+            yield scrapy.Request(url=url, callback=self.parse, meta={'page': page})
+
+    def company_information(self, response):
+        tr = Selector(response=response).xpath('//table[@class="addProjectTable siteFrome_info"]/tr')
+        company_name = tr[0].xpath('./td[2]/text()').extract_first()
+        number = tr[3].xpath('./td[2]/text()').extract_first()
+        company_name = company_name.split()[0]
+        number = number.split()[0]
+        repeat = self.r.sadd('Company_name', company_name)
+        if repeat:
+            data = {'companyName': company_name, 'licenseNum': number, 'contactMan': '', 'companyArea': '江西省', 'area': '',
+                    'contactAddress': '', 'contactPhone': '', 'token': self.token}
+            print(data)
+            yield scrapy.Request(
+                url='https://api.maotouin.com/rest/companyInfo/addCompanyRecord.htm',
+                # url='http://192.168.199.188:8080/web/rest/companyInfo/addCompanyRecord.htm',
+                method="POST",
+                headers={'Content-Type': 'application/json'},
+                body=json.dumps(data),
+                callback=self.zz,
+                meta={'company_name': company_name, 'data': data}
+            )
+        else:
+            print('此公司信息已经存在', company_name)
+
+    def zz(self, response):
+        not_company_code = json.loads(response.text)['code']
+        not_search_company_name = response.meta['company_name']
+        zz_data = response.meta['data']
+        self.r.sadd('all_company_name', not_search_company_name)
+        print(response.text)
+        data = json.dumps(zz_data, ensure_ascii=False)
+        if not_company_code == -102:
+            self.r.sadd('title_name1', not_search_company_name)
+            self.r.sadd('title_102', data)
+            self.r.sadd('title_name3', not_search_company_name)
+            print(not_search_company_name, '没找到的企业')
+        else:
+            print(not_search_company_name, '找到的企业')
